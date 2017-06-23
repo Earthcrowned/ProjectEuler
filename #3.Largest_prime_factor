@@ -15,14 +15,13 @@ using namespace std;
 int main()
 {
     long long num = 600851475143;
-    long long maxz(-1);
+    int maxz(0);
     int i(2);
     for(;;)
     {
         if(num%i==0)
         {
-            if(maxz < i)
-                maxz = i;
+            maxz = i;
             num = num/i;
         }
         if(num==1)
